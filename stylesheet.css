@@ -4,6 +4,13 @@
   padding: 0;
 }
 
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -168,12 +175,22 @@ iframe {
 
 #contact h1 {
   font-size: 2.5rem;
+  margin: 1em 0;
 }
 
-#contact img {
-  width: 3em;
-  height: 3em;
-  padding: 1em;
+#contact .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2em;
+}
+
+#contact .social img {
+  margin: 0 2em;
+  width: 50px;
 }
 
 footer {
